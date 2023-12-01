@@ -37,6 +37,7 @@
 		<Unit filename="include/BinarySearchTree.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/BinarySearchTree.cpp" />
+		<Unit filename="src/BinarySearchTree_Impl.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

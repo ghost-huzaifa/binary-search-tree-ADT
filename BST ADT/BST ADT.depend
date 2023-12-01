@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1701426055 source:c:\users\pmls\onedrive - higher education commission\3rd semester\dsa lab\lab 07\binary-search-tree-adt\bst adt\main.cpp
+	<iostream>
+
+1701443034 source:c:\users\pmls\onedrive - higher education commission\3rd semester\dsa lab\lab 07\binary-search-tree-adt\bst adt\src\binarysearchtree.cpp
+	"BinarySearchTree.h"
+
+1701446392 c:\users\pmls\onedrive - higher education commission\3rd semester\dsa lab\lab 07\binary-search-tree-adt\bst adt\include\binarysearchtree.h
+	<iostream>
+
+1701436683 source:c:\users\pmls\onedrive - higher education commission\3rd semester\dsa lab\lab 07\binary-search-tree-adt\bst adt\src\binarysearchtree_impl.cpp
+	"BinarySearchTree.cpp"
+	<string>
+
+1701446400 c:\users\pmls\onedrive - higher education commission\3rd semester\dsa lab\lab 07\binary-search-tree-adt\bst adt\src\binarysearchtree.cpp
+	"BinarySearchTree.h"
+
