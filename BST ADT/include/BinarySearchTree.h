@@ -14,8 +14,10 @@ class BinarySearchTree{
     bool search(const T elementToSearch);           //Contains
     void insert(const T elementToInsert);           //Compose element into a tree
     void remove(const T elementToRemove);           //decompose element from a tree
-
-
+   
+void printTree() const {
+        printTree(root, 0);
+    }
 private:
 
     struct BinaryNode
@@ -54,5 +56,23 @@ private:
 
     BinaryNode* findMin(BinaryNode*& t) const;
     BinaryNode* deepCopy(BinaryNode* t);
+    void printTree(BinaryNode* t, int space) const {
+        const int distance = 2; 
+
+        if (t == nullptr)
+            return;
+
+        space += distance;
+
+        printTree(t->right, space);
+
+        std::cout << std::endl;
+        for (int i = distance; i < space; i++)
+            std::cout << " ";
+
+        std::cout << t->element << "\n";
+
+        printTree(t->left, space);
+    }
 
 };

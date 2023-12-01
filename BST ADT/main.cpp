@@ -2,20 +2,21 @@
 #include <iostream>
 #include "include/BinarySearchTree.h"
 using namespace std;
-const int MAX_SIZE = 10;
+const int MAX_SIZE = 100;
 
 int main()
 {
   BinarySearchTree<int> T1;
-  /*for (int i = 0; i < MAX_SIZE; i++) {
+  for (int i = 0; i < MAX_SIZE; i++) {
     T1.insert(rand()%1000);
-  }*/
+  }
   while (1) {
     system("CLS");
     cout << "Binary Search Tree [version-0.01]" << endl;
     cout << "\t[I]nsert Element" << endl
       << "\t[S]earch Element" << endl
       << "\t[R]emove Element" << endl
+      << "\t[P]rint Tree (IN-ORDER Traversal)" << endl
       << "\t[Q]uit" << endl;
       char opt;
       cin >> opt;
@@ -82,15 +83,15 @@ int main()
             }
             break;
           }
+          case 'P':
+          {
+            T1.printTree();
+            break;
+          }
           default: 
           cout << "Invalid Option" << endl;
       }
       system("PAUSE");
   }
-  T1.insert(11101);
-  T1.insert(10001);
-  T1.insert(55555);
-  cout << T1.search(111001) << endl;
-  cout << T1.empty();
-  return 0;
+    return 0;
 }
